@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="thatchedcottage-redis" />
         <module name="thatchedcottage-user" />
         <module name="thatchedcottage-admin" />
         <module name="thatchedcottage-common" />
@@ -16,6 +17,7 @@
       <module name="thatchedcottage-admin" target="8" />
       <module name="thatchedcottage-common" target="8" />
       <module name="thatchedcottage-dao" target="8" />
+      <module name="thatchedcottage-redis" target="1.8" />
       <module name="thatchedcottage-service" target="8" />
       <module name="thatchedcottage-user" target="1.8" />
       <module name="thatchedcottage-web" target="8" />
@@ -26,6 +28,7 @@
       <module name="thatchedcottage-admin" options="-parameters" />
       <module name="thatchedcottage-common" options="-parameters" />
       <module name="thatchedcottage-dao" options="-parameters" />
+      <module name="thatchedcottage-redis" options="-parameters" />
       <module name="thatchedcottage-service" options="-parameters" />
       <module name="thatchedcottage-user" options="-parameters" />
       <module name="thatchedcottage-web" options="-parameters" />

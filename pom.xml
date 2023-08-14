@@ -7,6 +7,7 @@
         <module>thatchedcottage-admin</module>
         <module>thatchedcottage-common</module>
         <module>thatchedcottage-user</module>
+        <module>thatchedcottage-redis</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -74,14 +75,12 @@
                 <version>5.3.29</version>
                 <scope>compile</scope>
             </dependency>
-
             <!--Mybatis plus 自动生成-->
             <dependency>
                 <groupId>xin.altitude.cms</groupId>
                 <artifactId>ucode-cms-code-spring-boot-starter</artifactId>
                 <version>1.6.3.1-beta</version>
             </dependency>
-
             <dependency>
                 <groupId>xin.altitude.cms</groupId>
                 <artifactId>ucode-cms-common</artifactId>
@@ -97,6 +96,25 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.31</version>
             </dependency>
+            <!--springBoot集成redis-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>2.11.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.20</version>
+                <optional>true</optional>
+            </dependency>
+
+
 
             <dependency>
                 <groupId>com.example</groupId>
@@ -111,6 +129,11 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>thatchedcottage-user</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>thatchedcottage-redis</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
