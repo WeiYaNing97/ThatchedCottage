@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: xin.altitude.cms:ucode-cms-common:1.6.3.1-beta">
+    <CLASSES>
+      <root url="jar://D:/repository/xin/altitude/cms/ucode-cms-common/1.6.3.1-beta/ucode-cms-common-1.6.3.1-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/xin/altitude/cms/ucode-cms-common/1.6.3.1-beta/ucode-cms-common-1.6.3.1-beta-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/xin/altitude/cms/ucode-cms-common/1.6.3.1-beta/ucode-cms-common-1.6.3.1-beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

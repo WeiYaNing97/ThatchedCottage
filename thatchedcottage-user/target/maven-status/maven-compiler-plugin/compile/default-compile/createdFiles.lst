@@ -1,0 +1,14 @@
+com\thatchedcottage\user\mapper\UserRoleMapper.class
+com\thatchedcottage\user\service\impl\RoleServiceImpl.class
+com\thatchedcottage\user\controller\UserController.class
+com\thatchedcottage\user\service\impl\UserRoleServiceImpl.class
+com\thatchedcottage\user\service\impl\UserServiceImpl.class
+com\thatchedcottage\user\service\IRoleService.class
+com\thatchedcottage\user\domain\User.class
+com\thatchedcottage\user\controller\UserRoleController.class
+com\thatchedcottage\user\mapper\UserMapper.class
+com\thatchedcottage\user\domain\UserRole.class
+com\thatchedcottage\user\service\IUserRoleService.class
+com\thatchedcottage\user\service\IUserService.class
+com\thatchedcottage\user\mapper\RoleMapper.class
+com\thatchedcottage\user\domain\Role.class
