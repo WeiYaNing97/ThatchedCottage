@@ -21,6 +21,12 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 @Configuration
 public class RedisConfig {
 
+    /**
+     * 在使用RedisTemplate时需要进行一些必要的配置，否则会出现空指针异常。
+     * 通过@Configuration注解，将RedisTemplate配置为Spring的Bean。通过@Bean注解，将RedisTemplate实例化并进行相关的配置。
+     * 在这个示例中，使用了StringRedisSerializer作为键和值的序列化方式，你可以根据需要自定义序列化器。
+     * 请确保在使用RedisTemplate之前，将该配置类添加到你的Spring配置中。这样就可以避免空指针异常并正确使用RedisTemplate了。
+     */
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
