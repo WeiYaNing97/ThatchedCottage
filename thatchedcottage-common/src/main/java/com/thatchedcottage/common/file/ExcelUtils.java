@@ -1,10 +1,7 @@
 package com.thatchedcottage.common.file;
 
-import cn.hutool.core.io.FileUtil;
 import cn.hutool.poi.excel.ExcelReader;
 import cn.hutool.poi.excel.ExcelUtil;
-import org.junit.Test;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -19,7 +16,6 @@ public class ExcelUtils {
 
 
     public void importExcel() {
-
         /*//从文件中读取Excel为ExcelReader
         ExcelReader reader = ExcelUtil.getReader(FileUtil.file("test.xlsx"));
         //从流中读取Excel为ExcelReader（比如从ClassPath中读取Excel文件）
@@ -32,7 +28,7 @@ public class ExcelUtils {
         //通过sheet名获取
         reader = ExcelUtil.getReader(FileUtil.file("test.xlsx"), "sheet1");*/
 
-        String url = " ";
+        String url = "";
         //通过sheet名获取
         ExcelReader reader = ExcelUtil.getReader(url);
         //List<List<Object>> readAll = reader.read();
@@ -53,7 +49,6 @@ public class ExcelUtils {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
             System.out.println("==========遍历Map集合============");
             Set<Map.Entry<String, Object>> entries = readMap.entrySet();
             for (Map.Entry<String, Object> entrie:entries){

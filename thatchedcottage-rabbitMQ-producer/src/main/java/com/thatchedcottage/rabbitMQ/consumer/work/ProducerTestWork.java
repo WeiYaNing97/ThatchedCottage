@@ -25,8 +25,7 @@ public class ProducerTestWork {
         Connection connection = connectionFactory.newConnection();
         //4 创建 Chanel
         Channel channel = connection.createChannel();
-        //5 设置队列属性
-        /**
+        /**5 指定交换机类型
          * 第一个参数：队列名称
          * 第二个参数：队列是否要持久化
          * 第三个参数：是否排他性

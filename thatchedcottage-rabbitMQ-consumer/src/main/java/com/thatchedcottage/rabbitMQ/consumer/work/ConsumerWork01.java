@@ -8,11 +8,17 @@ import java.util.concurrent.TimeoutException;
 /**
  * @program: thatchedcottage
  * @description: RabbitMQ 消费者work工作模式 测试类
+ *
+ * 改变了能着多劳  及   手动签收
+ *
+ * 手动签收 避免了任务执行失败 而消息被签收的情况产生
+ *
  * @author:
  * @create: 2023-08-30 09:11
  **/
-public class ConsumerTest01 {
+public class ConsumerWork01 {
     public static void main(String[] args) throws IOException, TimeoutException {
+
         //1 创建一个连接工厂
         ConnectionFactory connectionFactory = new ConnectionFactory();
         //2 设置 rabbititmq ip 地址
@@ -21,6 +27,7 @@ public class ConsumerTest01 {
         Connection connection = connectionFactory.newConnection();
         //4 创建 Chanel
         Channel channel = connection.createChannel();
+
         //5 设置队列属性
         /**
          * 第一个参数：队列名称
@@ -50,13 +57,20 @@ public class ConsumerTest01 {
              * 消费者消费消息就在这个 handle中去进行处理
              */
             public void handle(String consumerTag, Delivery message) throws IOException {
+
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }finally {
                 }
+
                 System.out.println("ConsumerTest01消息内容为为" + new String(message.getBody()));
+
+                /**
+                * @Description 手动签收
+                 * 手动签收 避免了任务执行失败 而消息被签收的情况产生
+                */
                 channel.basicAck(message.getEnvelope().getDeliveryTag(), false);
             }
 
@@ -70,5 +84,7 @@ public class ConsumerTest01 {
                 System.out.println("1111");
             }
         });
+
     }
+
 }

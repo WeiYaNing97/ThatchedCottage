@@ -11,8 +11,9 @@ import java.util.concurrent.TimeoutException;
  * @author:
  * @create: 2023-08-30 09:11
  **/
-public class ConsumerTest02 {
+public class ConsumerWork02 {
     public static void main(String[] args) throws IOException, TimeoutException {
+
         //1 创建一个连接工厂
         ConnectionFactory connectionFactory = new ConnectionFactory();
         //2 设置 rabbititmq ip 地址
@@ -21,6 +22,7 @@ public class ConsumerTest02 {
         Connection connection = connectionFactory.newConnection();
         //4 创建 Chanel
         Channel channel = connection.createChannel();
+
         //5 设置队列属性
         /**
          * 第一个参数：队列名称
@@ -51,7 +53,14 @@ public class ConsumerTest02 {
              */
             public void handle(String consumerTag, Delivery message) throws IOException {
                 System.out.println("ConsumerTest02消息内容为为" + new String(message.getBody()));
+
+                /**
+                 * @Description 手动签收
+                 * 手动签收 避免了任务执行失败 而消息被签收的情况产生
+                 */
                 channel.basicAck(message.getEnvelope().getDeliveryTag(), false);
+
+
             }
 
         }, new CancelCallback() {
@@ -64,5 +73,6 @@ public class ConsumerTest02 {
                 System.out.println("1111");
             }
         });
+
     }
 }
