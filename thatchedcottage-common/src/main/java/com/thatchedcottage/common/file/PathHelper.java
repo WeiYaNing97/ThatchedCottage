@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class PathHelper {
     /* todo  日志路径*/
-    static String logPath = "D:\\jhnwadminlog" ;//Configuration.logPath;
+    static String logPath = "D:\\ThatchedCottageLog" ;//Configuration.logPath;
     /**
      * 将字符串写入文件中
      * @param str

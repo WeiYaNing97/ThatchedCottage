@@ -6,9 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="thatchedcottage-redis" />
-        <module name="thatchedcottage-user" />
         <module name="thatchedcottage-admin" />
+        <module name="thatchedcottage-thread" />
+        <module name="thatchedcottage-rabbitMQ-producer" />
+        <module name="thatchedcottage-user" />
+        <module name="thatchedcottage-rabbitMQ-consumer" />
+        <module name="thatchedcottage-redis" />
         <module name="thatchedcottage-common" />
       </profile>
     </annotationProcessing>
@@ -17,8 +20,13 @@
       <module name="thatchedcottage-admin" target="8" />
       <module name="thatchedcottage-common" target="8" />
       <module name="thatchedcottage-dao" target="8" />
+      <module name="thatchedcottage-quartz" target="1.8" />
+      <module name="thatchedcottage-rabbitMQ-consumer" target="1.8" />
+      <module name="thatchedcottage-rabbitMQ-producer" target="1.8" />
       <module name="thatchedcottage-redis" target="1.8" />
       <module name="thatchedcottage-service" target="8" />
+      <module name="thatchedcottage-shiro" target="1.8" />
+      <module name="thatchedcottage-thread" target="1.8" />
       <module name="thatchedcottage-user" target="1.8" />
       <module name="thatchedcottage-web" target="8" />
     </bytecodeTargetLevel>
@@ -28,8 +36,13 @@
       <module name="thatchedcottage-admin" options="-parameters" />
       <module name="thatchedcottage-common" options="-parameters" />
       <module name="thatchedcottage-dao" options="-parameters" />
+      <module name="thatchedcottage-quartz" options="-parameters" />
+      <module name="thatchedcottage-rabbitMQ-consumer" options="-parameters" />
+      <module name="thatchedcottage-rabbitMQ-producer" options="-parameters" />
       <module name="thatchedcottage-redis" options="-parameters" />
       <module name="thatchedcottage-service" options="-parameters" />
+      <module name="thatchedcottage-shiro" options="-parameters" />
+      <module name="thatchedcottage-thread" options="-parameters" />
       <module name="thatchedcottage-user" options="-parameters" />
       <module name="thatchedcottage-web" options="-parameters" />
     </option>

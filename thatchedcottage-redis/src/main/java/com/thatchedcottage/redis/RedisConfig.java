@@ -18,6 +18,19 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
  * 这里使用了StringRedisSerializer序列化key，
  * 使用Jackson2JsonRedisSerializer序列化value。你也可以根据需要选择其他的序列化方式。
  */
+
+/**
+ * @Configuration 是Java中的一个注解，用于标识一个类是一个配置类。配置类是用来声明应用程序中的Bean的类，
+ * 它通常包含了用@Bean注解标识的方法。这些方法会在应用程序启动时被调用，用于创建和配置Bean对象。
+ * @Configuration 注解告诉Spring框架这个类是一个配置类，Spring会在初始化时扫描带有@Configuration注解的类，
+ * 并根据其中的@Bean注解创建相应的Bean对象。这些Bean对象可以被其他组件使用，例如通过@Autowired注解进行依赖注入。
+ *
+ * @Configuration 注解可以与@ComponentScan注解一起使用，用于指定要扫描的包路径，
+ * Spring会自动扫描指定包及其子包下的所有带有@Component注解的类，并将其作为Bean注册到Spring容器中。
+ *
+ * @Configuration 注解还可以与@Import注解一起使用，用于导入其他配置类。这样可以将多个配置类组合起来，实现更灵活的配置。
+ * 总之，@Configuration注解是Spring框架中用来标识配置类的注解，它告诉Spring框架这个类包含了Bean的定义和配置信息。
+ */
 @Configuration
 public class RedisConfig {
 

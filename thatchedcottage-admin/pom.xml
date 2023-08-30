@@ -57,7 +57,6 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>thatchedcottage-user</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
@@ -66,6 +65,19 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>thatchedcottage-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>thatchedcottage-thread</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>thatchedcottage-rabbitMQ-producer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>thatchedcottage-rabbitMQ-consumer</artifactId>
         </dependency>
 
     </dependencies>

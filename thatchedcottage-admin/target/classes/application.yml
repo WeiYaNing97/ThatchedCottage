@@ -33,7 +33,7 @@ spring:
 
 ucode:
   code:
-    package-name: "com.thatchedcottage.user"
+    package-name: "com.thatchedcottage.shiro"
     domain:
       add-construction-method: true
     join-query: false

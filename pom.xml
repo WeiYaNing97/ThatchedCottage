@@ -8,6 +8,9 @@
         <module>thatchedcottage-common</module>
         <module>thatchedcottage-user</module>
         <module>thatchedcottage-redis</module>
+        <module>thatchedcottage-thread</module>
+        <module>thatchedcottage-rabbitMQ-producer</module>
+        <module>thatchedcottage-rabbitMQ-consumer</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -75,6 +78,7 @@
                 <version>5.3.29</version>
                 <scope>compile</scope>
             </dependency>
+
             <!--Mybatis plus 自动生成-->
             <dependency>
                 <groupId>xin.altitude.cms</groupId>
@@ -96,6 +100,7 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.31</version>
             </dependency>
+
             <!--springBoot集成redis-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -113,6 +118,25 @@
                 <version>1.18.20</version>
                 <optional>true</optional>
             </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.8.16</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>4.1.2</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>5.9.0</version>
+            </dependency>
+
 
 
 
@@ -136,6 +160,23 @@
                 <artifactId>thatchedcottage-redis</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>thatchedcottage-thread</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>thatchedcottage-rabbitMQ-producer</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>thatchedcottage-rabbitMQ-consumer</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>

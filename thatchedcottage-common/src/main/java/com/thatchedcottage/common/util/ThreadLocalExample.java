@@ -4,6 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+/**
+ *  辅助类
+ */
 public class ThreadLocalExample {
 
     public static ThreadLocal<Integer> integerThreadLocal = new ThreadLocal<Integer>() {

@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/thatchedcottage.iml" filepath="$PROJECT_DIR$/thatchedcottage.iml" />
       <module fileurl="file://$PROJECT_DIR$/thatchedcottage-admin/thatchedcottage-admin.iml" filepath="$PROJECT_DIR$/thatchedcottage-admin/thatchedcottage-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/thatchedcottage-common/thatchedcottage-common.iml" filepath="$PROJECT_DIR$/thatchedcottage-common/thatchedcottage-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thatchedcottage-rabbitMQ-consumer/thatchedcottage-rabbitMQ-consumer.iml" filepath="$PROJECT_DIR$/thatchedcottage-rabbitMQ-consumer/thatchedcottage-rabbitMQ-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thatchedcottage-rabbitMQ-producer/thatchedcottage-rabbitMQ-producer.iml" filepath="$PROJECT_DIR$/thatchedcottage-rabbitMQ-producer/thatchedcottage-rabbitMQ-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/thatchedcottage-redis/thatchedcottage-redis.iml" filepath="$PROJECT_DIR$/thatchedcottage-redis/thatchedcottage-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thatchedcottage-thread/thatchedcottage-thread.iml" filepath="$PROJECT_DIR$/thatchedcottage-thread/thatchedcottage-thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/thatchedcottage-user/thatchedcottage-user.iml" filepath="$PROJECT_DIR$/thatchedcottage-user/thatchedcottage-user.iml" />
     </modules>
   </component>
