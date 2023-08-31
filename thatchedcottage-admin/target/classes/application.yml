@@ -3,11 +3,13 @@ server:
   port: 8080
 
 spring:
+  #SQL 数据库
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/thatchedcottage?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: root
     driverClassName: com.mysql.cj.jdbc.Driver
+
   # redis 配置  包括主机名、端口号、密码等。
   redis:
     # 地址
@@ -31,9 +33,19 @@ spring:
         # #连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1ms
 
+  #RebbitMQ配置
+  rabbitmq:
+    listener:
+      simple:
+        # 手动签收
+        acknowledge-mode: manual
+        # 预取为一
+        prefetch: 1
+
+#MybatisPLUS 自动生成代码
 ucode:
   code:
-    package-name: "com.thatchedcottage.shiro"
+    package-name: "com.thatchedcottage.user"
     domain:
       add-construction-method: true
     join-query: false

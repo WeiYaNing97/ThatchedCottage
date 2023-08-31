@@ -58,19 +58,23 @@
             <groupId>com.example</groupId>
             <artifactId>thatchedcottage-user</artifactId>
         </dependency>
+        <!--方法类-->
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>thatchedcottage-common</artifactId>
         </dependency>
+        <!--redis-->
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>thatchedcottage-redis</artifactId>
         </dependency>
+        <!--thread-->
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>thatchedcottage-thread</artifactId>
         </dependency>
 
+        <!--rabbitMQ-->
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>thatchedcottage-rabbitMQ-producer</artifactId>
