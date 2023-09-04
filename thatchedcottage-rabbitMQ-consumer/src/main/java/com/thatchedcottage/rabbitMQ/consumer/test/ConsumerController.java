@@ -22,6 +22,6 @@ import org.springframework.stereotype.Component;
 public class ConsumerController {
     @RabbitListener(queuesToDeclare = @Queue("springboot_rabbitMQ"))
     public void receiveMsg(String msg, @Header(AmqpHeaders.DELIVERY_TAG) long deliveryTag, Channel channel){
-        System.out.println("========收到消息:"+msg);
+        System.out.println("收到消息:"+msg);
     }
 }

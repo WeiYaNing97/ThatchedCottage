@@ -46,6 +46,10 @@
             <artifactId>ucode-cms-common</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>thatchedcottage-common</artifactId>
+        </dependency>
 
     </dependencies>
 

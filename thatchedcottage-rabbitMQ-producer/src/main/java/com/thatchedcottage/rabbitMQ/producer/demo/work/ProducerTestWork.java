@@ -33,6 +33,7 @@ public class ProducerTestWork {
          * 第五个参数：是否要设置一些额外参数
          */
         channel.queueDeclare("01-hello",true,false,false,null);
+
         //6 发送消息
         /**
          * 第一个参数： 交换机名称
