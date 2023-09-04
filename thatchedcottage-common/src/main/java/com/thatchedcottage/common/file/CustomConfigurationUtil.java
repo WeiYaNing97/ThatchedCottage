@@ -7,22 +7,22 @@ import java.util.Map;
 public class CustomConfigurationUtil {
 
     public static void main(String[] args) {
-        try {
-            CustomConfigurationUtil customConfigurationUtil = new CustomConfigurationUtil();
-            Map<String, Object> stringObjectMap = customConfigurationUtil.ObtainAllConfigurationFileParameters();
-            Integer value = (Integer) customConfigurationUtil.getValue("rabbitmq.listener.simple.prefetch", stringObjectMap);
-            System.err.println(value);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        CustomConfigurationUtil customConfigurationUtil = new CustomConfigurationUtil();
+        Map<String, Object> stringObjectMap = customConfigurationUtil.ObtainAllConfigurationFileParameters();
+        Integer value = (Integer) customConfigurationUtil.getValue("rabbitmq.listener.simple.prefetch", stringObjectMap);
+        System.err.println(value);
     }
 
-    public Map<String, Object> ObtainAllConfigurationFileParameters() throws IOException {
+    public Map<String, Object> ObtainAllConfigurationFileParameters() {
         String path3 = "/customconfiguration.yml";
         InputStream inputStream = this.getClass().getResourceAsStream(path3);
         Yaml yaml = new Yaml();
         Map<String, Object> map = yaml.load(inputStream);
-        inputStream.close();
+        try {
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return map;
     }
 

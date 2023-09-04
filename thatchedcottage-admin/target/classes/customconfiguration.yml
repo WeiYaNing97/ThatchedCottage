@@ -1,0 +1,8 @@
+#RebbitMQ配置
+rabbitmq:
+  listener:
+    simple:
+      # 手动签收
+      acknowledge-mode: manual
+      # 预取为一
+      prefetch: 1

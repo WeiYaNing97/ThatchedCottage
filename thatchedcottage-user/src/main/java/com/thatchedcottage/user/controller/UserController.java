@@ -1,5 +1,6 @@
 package com.thatchedcottage.user.controller;
 import com.thatchedcottage.common.file.CustomConfigurationUtil;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.thatchedcottage.user.service.IUserService;
 import com.thatchedcottage.user.mapper.UserMapper;
@@ -26,6 +27,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UserController{
     @Autowired
     private IUserService userService;
+
     @GetMapping("/page")
     public AjaxResult page(PageEntity pageEntity,User user){
         return AjaxResult.success(userService.page(pageEntity.toPage(), Wrappers.lambdaQuery(user)));
