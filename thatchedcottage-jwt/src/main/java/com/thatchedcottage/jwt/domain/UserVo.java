@@ -1,26 +1,20 @@
-package com.thatchedcottage.user.domain;
+package com.thatchedcottage.jwt.domain;
+
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.Objects;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-import java.io.Serializable;
+
+import java.util.Objects;
+
 /** 用户表 */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @TableName(value = "sh_user")
-public class User{
+public class UserVo {
     private static final long serialVersionUID = 1L;
     @TableId(type = IdType.AUTO)
     private String id;
@@ -38,8 +32,9 @@ public class User{
     private String duties;
     private Integer sortNo;
     private String enableFlag;
-    
-    public User(User user) {
+    private String token;
+
+    public UserVo(UserVo user) {
         if (Objects.nonNull(user)) {
             this.id=user.id;
             this.loginName=user.loginName;
@@ -56,6 +51,7 @@ public class User{
             this.duties=user.duties;
             this.sortNo=user.sortNo;
             this.enableFlag=user.enableFlag;
+            this.token=user.token;
         }
     }
 
@@ -181,5 +177,13 @@ public class User{
 
     public void setEnableFlag(String enableFlag) {
         this.enableFlag = enableFlag;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }

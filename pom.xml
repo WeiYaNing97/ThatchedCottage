@@ -11,6 +11,7 @@
         <module>thatchedcottage-thread</module>
         <module>thatchedcottage-rabbitMQ-producer</module>
         <module>thatchedcottage-rabbitMQ-consumer</module>
+        <module>thatchedcottage-jwt</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -172,6 +173,11 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>thatchedcottage-redis</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>thatchedcottage-jwt</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 

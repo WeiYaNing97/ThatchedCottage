@@ -84,6 +84,12 @@
             <artifactId>thatchedcottage-rabbitMQ-consumer</artifactId>
         </dependency>
 
+        <!--jwt-->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>thatchedcottage-jwt</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

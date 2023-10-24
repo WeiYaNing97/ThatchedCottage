@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="thatchedcottage-admin" />
-        <module name="thatchedcottage-thread" />
-        <module name="thatchedcottage-rabbitMQ-producer" />
-        <module name="thatchedcottage-user" />
-        <module name="thatchedcottage-rabbitMQ-consumer" />
         <module name="thatchedcottage-redis" />
+        <module name="thatchedcottage-rabbitMQ-producer" />
+        <module name="thatchedcottage-thread" />
+        <module name="thatchedcottage-rabbitMQ-consumer" />
+        <module name="thatchedcottage-jwt" />
+        <module name="thatchedcottage-user" />
         <module name="thatchedcottage-common" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="thatchedcottage-admin" target="8" />
       <module name="thatchedcottage-common" target="8" />
       <module name="thatchedcottage-dao" target="8" />
+      <module name="thatchedcottage-jwt" target="1.8" />
       <module name="thatchedcottage-quartz" target="1.8" />
       <module name="thatchedcottage-rabbitMQ-consumer" target="1.8" />
       <module name="thatchedcottage-rabbitMQ-producer" target="1.8" />
@@ -36,6 +38,7 @@
       <module name="thatchedcottage-admin" options="-parameters" />
       <module name="thatchedcottage-common" options="-parameters" />
       <module name="thatchedcottage-dao" options="-parameters" />
+      <module name="thatchedcottage-jwt" options="-parameters" />
       <module name="thatchedcottage-quartz" options="-parameters" />
       <module name="thatchedcottage-rabbitMQ-consumer" options="-parameters" />
       <module name="thatchedcottage-rabbitMQ-producer" options="-parameters" />
